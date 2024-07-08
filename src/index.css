@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply text-white relative;
+  background-image: repeating-linear-gradient(
+      to right,
+      #2d2a44 0 1px,
+      transparent 2px 200px
+    ),
+    repeating-linear-gradient(to bottom, #2d2a44 0 1px, transparent 2px 200px),
+    radial-gradient(at 50% 50%, #2d2a44, #1d1b34);
+  cursor: url(./assets/spider_cursor.png), auto;
+}
+
+.text-gradient {
+  /* font-size: 4em; */
+  font-weight: bold;
+  background-image: linear-gradient(to left, #e8e191, #e46e7f);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  line-height: 1em;
+}
+
+.btn {
+  all: unset;
+  border: 1px solid #afaeae55;
+  padding: 10px 40px;
+  border-radius: 20px;
+  background-image: linear-gradient(to bottom, #eee1, transparent, #eee1);
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn:hover {
+  background-color: #c691e6;
+  color: #040018;
+  box-shadow: 0 0 50px #c691e6;
+}
+
+.text-effect {
+  color: rgb(51, 255, 51);
+  text-shadow: 0 0 30px rgb(12, 193, 12);
+}
+
+.spider-effect {
+  animation: down;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.spider-effect-infinite {
+  animation: left_right infinite;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(-40%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes left_right {
+  0% {
+    transform: translateX(-20px);
+  }
+  10% {
+    transform: translateX(-15px);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  35% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(0px);
+  }
+  65% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  85% {
+    transform: translateX(15px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
