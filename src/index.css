@@ -46,20 +46,21 @@ body {
 
 .spider-effect {
   animation: down;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
 .spider-effect-infinite {
   animation: left_right infinite;
   animation-duration: 1.5s;
-  animation-fill-mode: forwards;
+  animation-delay: 0.8s;
+  animation-fill-mode: backwards;
   animation-direction: alternate;
 }
 
 @keyframes down {
   0% {
-    transform: translateY(-40%);
+    transform: translateY(-30%);
   }
   100% {
     transform: translateY(0);

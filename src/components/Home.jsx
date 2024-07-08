@@ -97,11 +97,8 @@ const Home = () => {
               <span>Upstatement.</span>
             </p>
           </div>
-          <div className="absolute top-[-70%] sm:top-[-120%] md:top-[-100%] right-0 w-[150px] sm:w-[200px] md:w-[300px] lg:w-[400px]">
-            <img
-              className="w-full spider-effect spider-effect-infinite"
-              src={spiderman}
-            />
+          <div className="absolute top-[-70%] sm:top-[-120%] md:top-[-100%] right-0 w-[150px] sm:w-[200px] md:w-[300px] lg:w-[400px] spider-effect">
+            <img className="w-full spider-effect-infinite" src={spiderman} />
           </div>
         </div>
 
