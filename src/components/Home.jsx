@@ -73,10 +73,10 @@ const Home = () => {
   });
 
   return (
-    <main>
+    <main className="w-full overflow-hidden">
       <div
         ref={bannerRef}
-        className=" relative h-[100vh] flex justify-center items-start flex-col px-4 md:px-20 lg:px-40"
+        className=" relative h-[100vh] flex justify-center items-start flex-col px-4 md:px-20 lg:px-36"
       >
         <div className=" flex relative space-y-1 mb-4">
           <div>
@@ -97,7 +97,7 @@ const Home = () => {
               <span>Upstatement.</span>
             </p>
           </div>
-          <div className="absolute top-[-70%] sm:top-[-120%] md:top-[-100%] right-0 w-[150px] sm:w-[200px] md:w-[300px] lg:w-[400px] spider-effect">
+          <div className="absolute top-[-50%] sm:top-[-120%] md:top-[-60%] lg:top-[-90%] right-0 w-[150px] sm:w-[200px] md:w-[250px] lg:w-[350px] spider-effect">
             <img className="w-full spider-effect-infinite" src={spiderman} />
           </div>
         </div>
@@ -106,7 +106,7 @@ const Home = () => {
       </div>
       <canvas
         ref={canvasRef}
-        className="absolute bg-transparent top-0 left-0 w-full h-full pointer-events-none"
+        className="hidden sm:block absolute bg-transparent top-0 left-0 w-full h-full pointer-events-none"
       ></canvas>
     </main>
   );
