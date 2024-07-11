@@ -97,9 +97,9 @@ const Home = () => {
               <span>Upstatement.</span>
             </p>
           </div>
-          <div className="absolute top-[-50%] sm:top-[-120%] md:top-[-60%] lg:top-[-90%] right-0 w-[150px] sm:w-[200px] md:w-[250px] lg:w-[350px] spider-effect">
-            <img className="w-full spider-effect-infinite" src={spiderman} />
-          </div>
+        </div>
+        <div className="absolute top-0 right-[8%] w-[150px] sm:w-[200px] md:w-[250px] lg:w-[350px] spider-effect">
+          <img className="w-full spider-effect-infinite" src={spiderman} />
         </div>
 
         <button className="btn">Contact Me</button>
