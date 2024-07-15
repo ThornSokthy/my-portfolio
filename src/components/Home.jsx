@@ -90,7 +90,7 @@ const Home = () => {
               I'm a <span className=" text-effect">{text}</span>
               <Cursor />
             </h1>
-            <p className="max-w-[70%] md:max-w-[45%]">
+            <p className="max-w-[70%] md:max-w-[45%] line-clamp-3 sm:line-clamp-none">
               I'm a software engineer specializing in building (and occasionally
               designing) exceptional digital experiences. Currently, I'm focused
               on building accessible, human-centered products at{" "}
@@ -98,7 +98,7 @@ const Home = () => {
             </p>
           </div>
         </div>
-        <div className="absolute top-0 right-[8%] w-[150px] sm:w-[200px] md:w-[250px] lg:w-[350px] spider-effect">
+        <div className="absolute top-0 right-[8%] w-[180px] sm:w-[200px] md:w-[250px] lg:w-[350px] spider-effect ">
           <img className="w-full spider-effect-infinite" src={spiderman} />
         </div>
 
