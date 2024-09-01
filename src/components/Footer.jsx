@@ -16,7 +16,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4 py-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="mb-8 md:mb-0">
-            <h2 className="text-2xl font-bold mb-4">Company Name</h2>
+            <h2 className="text-2xl font-bold mb-4">Thorn Sokthy</h2>
             <p className="text-gray-400">
               We are a modern company providing innovative solutions for your
               digital needs.
@@ -39,14 +39,6 @@ const Footer = () => {
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-gray-400 hover:text-white transition-colors"
-                >
-                  Services
                 </a>
               </li>
               <li>
@@ -110,7 +102,7 @@ const Footer = () => {
         </div>
         <div className="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400">
-            &copy; 2024 Company Name. All rights reserved.
+            &copy; 2024 Thron Sokthy. All rights reserved.
           </p>
           <div className="flex space-x-4 mt-4 md:mt-0">
             <a
