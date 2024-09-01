@@ -1,44 +1,48 @@
 const Contact = () => {
   return (
-    <section className="grid place-content-center h-[90vh] px-6 relative">
-      <div className="w-[450px] sm:w-[500px] md:w-[600px] lg:w-[800px]">
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold">
-          Contact.
-        </h1>
-        <p className="text-sm md:text-xl mt-2">
-          Get in touch or shoot me an email directly on{" "}
-          <strong>sokthythorn@gmail.com</strong>
-        </p>
-        <form className="flex flex-col gap-4 mt-5 w-full">
-          <div className="flex flex-col sm:flex-row justify-between gap-4 mb-2">
+    <div className="min-h-screen flex items-center justify-center bg-gray-900 text-white px-4 sm:px-6 lg:px-8">
+      <section id="contact" className="w-full max-w-md">
+        <h2 className="text-4xl font-bold mb-8 text-center">Contact</h2>
+        <form className="space-y-6">
+          <div>
+            <label htmlFor="name" className="block mb-2 text-sm font-medium">
+              Name
+            </label>
             <input
               type="text"
-              placeholder="Your Name"
-              className="w-full pl-4 py-2 rounded-md outline-none shadow-sm shadow-[#666] border-2 border-gray-600 bg-transparent"
-            />
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="w-full pl-4 py-2 rounded-md outline-none shadow-sm shadow-[#666] border-2 border-gray-600 bg-transparent"
+              id="name"
+              className="w-full bg-gray-800 bg-opacity-50 border border-gray-700 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent transition-all"
             />
           </div>
-          <textarea
-            placeholder="Your Message"
-            rows={6}
-            className="w-full pl-4 py-2 rounded-md outline-none shadow-sm shadow-[#666] border-2 border-gray-600 bg-transparent"
-          />
+          <div>
+            <label htmlFor="email" className="block mb-2 text-sm font-medium">
+              Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              className="w-full bg-gray-800 bg-opacity-50 border border-gray-700 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent transition-all"
+            />
+          </div>
+          <div>
+            <label htmlFor="message" className="block mb-2 text-sm font-medium">
+              Message
+            </label>
+            <textarea
+              id="message"
+              rows="4"
+              className="w-full bg-gray-800 bg-opacity-50 border border-gray-700 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-400 focus:border-transparent transition-all resize-none"
+            ></textarea>
+          </div>
           <button
             type="submit"
-            className="mt-3 self-start px-8 py-2 rounded-full shadow-sm shadow-[#c060fc] bg-[#c060fc] text-white"
+            className="w-full bg-pink-500 text-white px-6 py-3 rounded-md hover:bg-pink-600 transition-colors font-medium"
           >
             Send Message
           </button>
         </form>
-        <button className="absolute left-8 md:left-20 bottom-[-2rem] flex items-center gap-4">
-          Go Back Home <i className="bx bxs-right-arrow-alt text-xl"></i>
-        </button>
-      </div>
-    </section>
+      </section>
+    </div>
   );
 };
 

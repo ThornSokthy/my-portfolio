@@ -17,12 +17,7 @@ const Header = () => {
         >
           About
         </Link>
-        <Link
-          className="transition-all duration-75 hover:drop-shadow-green hover:text-green-400"
-          to="/skill "
-        >
-          My Skills
-        </Link>
+
         <Link
           className="transition-all duration-75 hover:drop-shadow-green hover:text-green-400"
           to="/project"

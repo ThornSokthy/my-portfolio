@@ -4,6 +4,7 @@ import AboutUs from "./components/AboutUs";
 import { Routes, Route } from "react-router-dom";
 import Contact from "./components/Contact";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer";
 function App() {
   return (
     <main className=" relative">
@@ -14,6 +15,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/project" element={<Projects />} />
       </Routes>
+      <Footer />
     </main>
   );
 }
