@@ -17,7 +17,7 @@ const Home = () => {
     let dots = [];
     let colors = ["#eee", "#545454", "#596d91", "#bb5a68"];
 
-    for (let index = 0; index < 60; index++) {
+    for (let index = 0; index < 100; index++) {
       dots.push({
         x: Math.floor(Math.random() * canvas.width),
         y: Math.floor(Math.random() * canvas.height),
