@@ -38,7 +38,6 @@ const Header = () => {
         <h1 className="text-gradient text-3xl drop-shadow-green">THY.</h1>
       </Link>
 
-      {/* Desktop Menu */}
       <nav className="gap-8 hidden sm:flex">
         <Link
           className="transition-all duration-75 hover:drop-shadow-green hover:text-green-400"
