@@ -11,7 +11,7 @@ body {
     ),
     repeating-linear-gradient(to bottom, #2d2a44 0 1px, transparent 2px 200px),
     radial-gradient(at 50% 50%, #2d2a44, #1d1b34);
-  /* cursor: url(./assets/spider_cursor.png), auto; */
+  cursor: url(./assets/spider_cursor.png), auto;
   font-family: "Poppins", sans-serif;
 }
 
@@ -101,5 +101,32 @@ body {
   }
   100% {
     transform: translateX(20px);
+  }
+}
+
+@layer utilities {
+  .before-element {
+    position: relative;
+  }
+
+  .before-element::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: -5px;
+    width: 0;
+    height: 100%;
+    overflow: hidden;
+    border-right: 3px solid var(--clr);
+    transition: width 1s;
+  }
+
+  .before-element:hover::before {
+    width: 100%;
+    left: 6px;
+    filter: drop-shadow(0 0 25px var(--clr));
+  }
+  .before-element:hover {
+    color: var(--clr);
   }
 }

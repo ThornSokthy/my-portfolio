@@ -6,6 +6,9 @@ export default {
       dropShadow: {
         green: "0 0 20px rgb(12, 193, 12)",
       },
+      content: {
+        empty: '""',
+      },
     },
   },
   plugins: [],

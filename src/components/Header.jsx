@@ -39,29 +39,37 @@ const Header = () => {
       </Link>
 
       <nav className="gap-8 hidden sm:flex">
-        <Link
-          className="transition-all duration-75 hover:drop-shadow-green hover:text-green-400"
-          to="/"
-        >
-          Home
+        <Link to="/">
+          <span
+            className="before-element relative font-bold text-sm text-gray-400 leading-[3rem]"
+            style={{ "--clr": "#eb34c0" }}
+          >
+            HOME
+          </span>
         </Link>
-        <Link
-          className="transition-all duration-75 hover:drop-shadow-green hover:text-green-400"
-          to="/about"
-        >
-          About
+        <Link to="/about">
+          <span
+            className="before-element relative font-bold text-sm text-gray-400 leading-[3rem]"
+            style={{ "--clr": "#34ebd2" }}
+          >
+            ABOUT
+          </span>
         </Link>
-        <Link
-          className="transition-all duration-75 hover:drop-shadow-green hover:text-green-400"
-          to="/project"
-        >
-          Projects
+        <Link to="/project">
+          <span
+            className="before-element relative font-bold text-sm text-gray-400 leading-[3rem]"
+            style={{ "--clr": "#ebe834" }}
+          >
+            PROJECTS
+          </span>
         </Link>
-        <Link
-          className="transition-all duration-75 hover:drop-shadow-green hover:text-green-400"
-          to="/contact"
-        >
-          Contact
+        <Link to="/contact">
+          <span
+            className="before-element relative font-bold text-sm text-gray-400 leading-[3rem]"
+            style={{ "--clr": "#ff2447" }}
+          >
+            CONTACT
+          </span>
         </Link>
       </nav>
 
@@ -80,36 +88,40 @@ const Header = () => {
             className="text-3xl absolute left-4 top-4 block sm:hidden"
             aria-label="Toggle Menu"
           >
-            <i class='bx bx-x'></i>
+            <i class="bx bx-x"></i>
           </button>
 
-          <Link
-            className="transition-all duration-75 hover:drop-shadow-green hover:text-green-400"
-            to="/"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Home
+          <Link to="/" onClick={() => setIsMobileMenuOpen(false)}>
+            <span
+              className="before-element relative font-bold text-sm text-gray-400 leading-[3rem]"
+              style={{ "--clr": "#eb34c0" }}
+            >
+              HOME
+            </span>
           </Link>
-          <Link
-            className="transition-all duration-75 hover:drop-shadow-green hover:text-green-400"
-            to="/about"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            About
+          <Link to="/about" onClick={() => setIsMobileMenuOpen(false)}>
+            <span
+              className="before-element relative font-bold text-sm text-gray-400 leading-[3rem]"
+              style={{ "--clr": "#34ebd2" }}
+            >
+              ABOUT
+            </span>
           </Link>
-          <Link
-            className="transition-all duration-75 hover:drop-shadow-green hover:text-green-400"
-            to="/project"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Projects
+          <Link to="/project" onClick={() => setIsMobileMenuOpen(false)}>
+            <span
+              className="before-element relative font-bold text-sm text-gray-400 leading-[3rem]"
+              style={{ "--clr": "#ebe834" }}
+            >
+              PROJECTS
+            </span>
           </Link>
-          <Link
-            className="transition-all duration-75 hover:drop-shadow-green hover:text-green-400"
-            to="/contact"
-            onClick={() => setIsMobileMenuOpen(false)}
-          >
-            Contact
+          <Link to="/contact" onClick={() => setIsMobileMenuOpen(false)}>
+            <span
+              className="before-element relative font-bold text-sm text-gray-400 leading-[3rem]"
+              style={{ "--clr": "#ff2447" }}
+            >
+              CONTACT
+            </span>
           </Link>
         </div>
       )}

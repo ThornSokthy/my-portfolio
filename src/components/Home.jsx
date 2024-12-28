@@ -111,8 +111,6 @@ const Home = () => {
           className="hidden sm:block absolute bg-transparent top-0 left-0 w-full h-full pointer-events-none"
         ></canvas>
       </main>
-
-      <LatestProjects />
     </>
   );
 };
